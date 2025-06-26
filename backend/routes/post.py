@@ -92,7 +92,7 @@ def delete_blog_post(post_id):
     return jsonify({"message": "❌ Failed to delete post."}), 400
 
 @post_routes.route('/categories', methods=['GET'])
-@login_required
+# @login_required
 def get_all_categories():
     categories = get_all_categories_from_db()
     return jsonify(categories), 200
