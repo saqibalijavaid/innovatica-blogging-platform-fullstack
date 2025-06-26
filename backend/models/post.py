@@ -11,6 +11,7 @@ def get_db_connection():
         database=Config.DB_NAME,
         port=Config.DB_PORT,
         cursorclass=pymysql.cursors.DictCursor
+        print("Connecting to DB:", Config.DB_HOST, Config.DB_PORT)
     )
 
 # --- CREATE ---
